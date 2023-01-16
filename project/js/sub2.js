@@ -9,21 +9,24 @@ fetch("./js/data.json")
 
 function callback(data) {
   const elBox = document.querySelector(".flexbigbox"),
-    elBox01 = document.querySelector(".box01"),
-    elImg01 = document.querySelector(".header-right img"),
+   elBox01 = document.querySelector(".box01"),
+   elImg01 = document.querySelector(".header-right img"),
     elBtn04 = document.querySelector(".menu img");
-  elMenu = document.querySelector(".menu");
+    elMenu = document.querySelector(".menu");
 
   let Thick = data.Philip.thick;
 
   elImg01.addEventListener("click", function () {
     elMenu.classList.toggle("fade");
+    $(".header-right img").css("display", "none");
   }); //버거메뉴 열때
   elBtn04.addEventListener("click", function () {
-    console.log("asd");
     elMenu.classList.remove("fade");
+    $(".header-right img").css("display", "block");
   }); //버거메뉴 눌렀을때 열고 닫기
 
+
+  
   /* let Thin = data.Philip.thin; */
   /* console.log(Thin[0].url); */
 
@@ -44,9 +47,9 @@ function callback(data) {
     }
   }
   thinIn(); */
-  function thickIn() {
+  function thickIn(){
     for (i = 0; i < Thick.length; i++) {
-      elBox01.innerHTML += `<div class="flexbox">
+        elBox01.innerHTML += `<div class="flexbox">
         <div class="name">${Thick[i].title}</div>
         <div class="img">
           <img src="${Thick[i].url}" alt="" />
@@ -58,7 +61,9 @@ function callback(data) {
           <p>${Thick[i].rating.replaceAll("\\n", "<br>")}</p>
         </div>
       </div>`;
-    }
+      }
   }
   thickIn();
+
+
 }

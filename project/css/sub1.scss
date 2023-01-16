@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 main {
   width: 100%;
   .product-banner {
@@ -18,14 +25,14 @@ main {
   }
   .big-box1 {
     width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
     text-align: center;
     padding: 1.875rem;
     .text-box {
       width: 100%;
       height: 100px;
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       hr {
         position: absolute;
         width: 100%;
@@ -34,33 +41,24 @@ main {
       p {
         width: 200px;
         font-weight: bold;
-        font-family: "Nanum Gothic Coding";
         font-size: 40px;
-        display: block;
         background-color: #fff;
-        position: absolute;
-        left: 45%;
-        // top: 0;
       }
     }
     .flexbigbox {
       width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
 
       .flexbox {
-        // background-color: yellow;
-        width: 15%;
+        width: 20%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin: 50px;
-        // border: solid 1px #000;
         border-radius: 10%;
         padding: 20px;
         height: 40vh;
@@ -69,11 +67,9 @@ main {
 
         .name {
           height: 50px;
-          // border: solid 1px #000;
           border-radius: 25px;
           font-size: 30px;
           font-weight: 900;
-          font-family: "Nanum Gothic Coding";
           text-align: center;
           display: flex;
           align-items: center;
@@ -86,11 +82,8 @@ main {
         }
         .ex {
           font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
           font-weight: bold;
           color: darkgray;
-          // opacity: 0;
-          // transition: opacity 0.35s ease-in-out;
         }
       }
       .rating {
@@ -115,528 +108,14 @@ main {
       }
     }
   }
-  .big-box2 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      // border: solid 3px #000;
-      span {
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 26px;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      .flexbox {
-        // background-color: yellow;
-        width: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-    }
-  }
-  .big-box3 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      // border: solid 3px #000;
-      span {
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 26px;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      .flexbox {
-        // background-color: yellow;
-        width: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-    }
-  }
-  .big-box4 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      // border: solid 3px #000;
-      span {
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 26px;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      .flexbox {
-        // background-color: yellow;
-        width: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-    }
-  }
-  .big-box5 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      height: 100px;
-      position: relative;
-      hr {
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-      }
-      p {
-        width: 200px;
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 40px;
-        display: block;
-        background-color: #fff;
-        position: absolute;
-        left: 45%;
-        // top: 0;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .flexbox {
-        // background-color: yellow;
-        width: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-    }
-  }
-  .big-box6 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      // border: solid 3px #000;
-      span {
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 26px;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      .flexbox {
-        // background-color: yellow;
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-    }
-  }
-  .big-box7 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      // border: solid 3px #000;
-      span {
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 26px;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      .flexbox {
-        // background-color: yellow;
-        width: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-    }
-  }
-  .big-box8 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      // border: solid 3px #000;
-      span {
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 26px;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      .flexbox {
-        // background-color: yellow;
-        width: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-    }
-  }
-  .big-box9 {
-    width: 100%;
-    // height: 50vh;
-    // background-color: chocolate;
-    text-align: center;
-    padding: 1.875rem;
-    .text-box {
-      width: 100%;
-      // border: solid 3px #000;
-      span {
-        font-weight: bold;
-        font-family: "Nanum Gothic Coding";
-        font-size: 26px;
-      }
-    }
-    .flexbigbox {
-      width: 100%;
-      // height: 40vh;
-      // background-color: aqua;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      .flexbox {
-        // background-color: yellow;
-        width: 15%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        // border: solid 1px #000;
-        border-radius: 10%;
-        padding: 20px;
-        height: 40vh;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
-        .name {
-          height: 50px;
-          // border: solid 1px #000;
-          border-radius: 25px;
-          font-size: 30px;
-          font-weight: 900;
-          font-family: "Nanum Gothic Coding";
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-        .img {
-          width: 100%;
-          img {
-            width: 40%;
-          }
-        }
-        .ex {
-          font-size: 1.125rem;
-          font-family: "Nanum Gothic Coding";
-          font-weight: bold;
-          color: darkgray;
-        }
-      }
-      :nth-child(2).flexbox img {
-        width: 100%;
-      }
-    }
-  }
 }
 footer {
   width: 100%;
-  background-color: red;
+  background-color: #ebebeb;
   height: 10vh;
   bottom: 0;
   position: relative;
-  font-size: 30px;
-  font-family: "Do hyeon";
+  font-size: 20px;
   font-weight: lighter;
 
   .copyright {
@@ -646,3 +125,4 @@ footer {
     height: 100%;
   }
 }
+@import "./media.scss";

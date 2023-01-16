@@ -29,10 +29,11 @@ function callback(data) {
 
   elImg01.addEventListener("click", function () {
     elMenu.classList.toggle("fade");
+    $(".header-right img").css("display", "none");
   }); //버거메뉴 열때
   elBtn04.addEventListener("click", function () {
-    console.log("asd");
     elMenu.classList.remove("fade");
+    $(".header-right img").css("display", "block");
   }); //버거메뉴 눌렀을때 열고 닫기
 
   $(".btn").click(function () {
@@ -83,8 +84,6 @@ function callback(data) {
         $(".circle-box").css("display", "none");
       }
     });
-    
-    
   }); //네번째 버튼들 클릭시
 
   $(".close").click(function () {
@@ -94,12 +93,10 @@ function callback(data) {
   }); //닫기버튼 클릭시
   $(".detail").click(function () {});
   let datas = data.ciga;
-  console.log(data.rating);
   function arrFilter(test1) {
     let aa = test1.filter((list) => {
       datas.forEach((data) => {
         if (data.id == list) {
-          
           elImgbox01.innerHTML += `
           <div class="swiper-slide">
           <h4>${data.title}</h4>
@@ -110,12 +107,11 @@ function callback(data) {
       }); //제이슨 데이터들 뿌려주기
     });
 
-    setTimeout(()=>{
+    setTimeout(() => {
       var swiper = new Swiper(".mySwiper", {
         effect: "cards",
-        grabCursor: true, 
+        grabCursor: true,
       });
-    },100)
-    
+    }, 100);
   }
 }

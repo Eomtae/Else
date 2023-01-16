@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큐브 만들기 </title>
+    <style>
+        div.wrapper{
+            width:250px;
+            height:250px;
+            perspective: 500px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+            /*포지션 속성으로 가운데 정렬하는 방법*/ /*margin 0 auto는 가로정렬밖에 안됨*/
+        div.cube{
+            position: relative;
+            width:100%;
+            height:100%;
+            transform-style: preserve-3d;
+            transition:3000ms;
+    
+           
+            
+        }
+
+        div.item{
+            position: absolute;
+            width:100%;
+            height:100%;
+            font-size: 50px;
+            line-height: 250px;
+            text-align: center;
+            opacity: 0.6;
+
+        }
+
+        .front{
+            background:darkcyan;
+            transform: rotate(0deg) translateZ(125px);
+        }
+
+        .back{
+            background:orange; 
+            transform: rotateY(180deg) translateZ(125px);
+
+        }
+
+        .right{
+            background: rgb(53, 202, 138);
+            transform: rotateY(90deg) translateZ(125px);
+            
+        }
+
+        .left{
+            background: darkgreen;
+            transform: rotateY(-90deg) translateZ(125px);
+        }
+
+        .top{
+            background: rgb(149, 6, 104);
+            transform: rotateX(90deg) translateZ(125px);       
+        }
+
+        .bottom{
+            background:rgb(9, 35, 137);
+            transform: rotateX(-90deg) translateZ(125px)
+        }
+
+        .cube:hover{
+            transform: rotate3d(1,1,0,360deg);
+            /*rotate3d : 각 축의 앵글을 정하고 회전 */
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="wrapper"><!--원근감이 들어갈 영역에 대한 설정(도화지)-->
+    <div class="cube"><!--투시도를 줄 또다른 영역-->
+        <div class="item front">front</div><!--각각의 모든 면에 들어갈 항목-->
+        <div class="item back">back</div>
+        <div class="item right">right</div>
+        <div class="item left">left</div>
+        <div class="item top">top</div>
+        <div class="item bottom">bottom</div>
+    </div>
+</div>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+        <img src="./img/dice-1.jpg" alt="">
+        <button>돌리기</button>
+        
+    </div>
+    <style>
+        img{
+            width:100px;
+            height:100px;
+
+        }
+    </style>
+        
+    <script>
+
+        let data = [
+            {src : "./img/dice-1.jpg"},
+            {src : "./img/dice-2.jpg"},
+            {src : "./img/dice-3.jpg"},
+            {src : "./img/dice-4.jpg"},
+            {src : "./img/dice-5.jpg"},
+            {src : "./img/dice-6.jpg"},
+        
+    ]
+        let btn = document.querySelector('button')
+
+        let img = document.querySelector('img')
+        
+            btn.onclick = function(){
+               console.log (Math.floor(Math.random()* 6))
+            console.log()
+           let ran = Math.floor(Math.random()* 6)
+                img.src = data[ran].src
+
+
+                
+                
+            }
+
+
+let nnn = 2455
+            function plat (nnn) {
+                console.log(nnn)
+            }
+
+
+    </script>
+</body>
+</html>

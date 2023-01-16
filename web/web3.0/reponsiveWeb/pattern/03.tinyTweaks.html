@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinyTweaks</title>
+    <style>
+        /*
+        tinyTweaks은 다른 패턴들과 달리 레이아웃의 변화는 거의 없는
+        단순한 디자인에 적합하다.
+        레이아웃은 변화하지 않으며 텍스트의 크기, 이미지의 크기가
+        디바이스의 크기에 따라 변화하는 정도가 끝이다.
+        원페이지형 레이아웃이나, 레이아웃이 거의 없는 블로그형 사이트에
+        많이 사용된다.
+    
+        */
+
+        body,html{
+            font-size: 0.520833333333333333vw;
+            /*1rem = 10px*/
+            /*폰트 사이즈 반응형으로 변경하기
+            기준이 되는 페이지의 width값을 선정(모바일 기준, pc 기준)
+            body에 적용할 폰트 사이즈의 수치 10px
+            Ex)1920기준 10px적용 시 = 10/1920*100
+            단위는 vw(viewport width를 사용해서 브라우저의 가로 크기에 대응 하도록 한다.)
+            
+            
+            */
+        }
+        .wrapper{
+            width:100%;
+            background-color:pink;
+            text-align: center;
+            padding:2rem 0px;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        .text{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .text02{
+            font-size: 2rem;
+        }
+
+        @media screen and (max-width:980px){
+            body,html{
+                font-size: 1.020408163265306vw;
+            }
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Lorem, ipsum dolor.</h1><br>
+        <p class="text">Lorem ipsum dolor sit amet.</p><br>
+        <p class="text02">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+            Soluta beatae iure nisi deserunt maxime dignissimos odio minima, <br>
+                expedita eum magnam nesciunt nemo eveniet labore quis nihil esse? Ducimus, <br>
+                exercitationem hic explicabo vero iure totam ut, odio ipsa, <br>
+                labore suscipit dolorum reiciendis at. Voluptas nulla aliquam, <br>
+                ducimus esse et dolor maiores iure est debitis quis minima. Totam,<br>
+                 sequi. Pariatur aut sunt ullam quod tempore aspernatur ut asperiores cum vero, <br>
+                 totam fugit quibusdam. <br>
+                 Officia ex delectus modi maiores magnam,<br>
+                  quisquam dignissimos incidunt explicabo provident quas accusantium.<br> 
+                  Sequi iure quisquam inventore est vitae.</p>
+    </div>
+
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.trnasition.html</title>
+    <style>
+    /*
+        transition 효과
+        특정 행동(이벤트)을 취했을 대 변화되는 요소가 전환되는 시간적인 효과를
+        주는 속성
+
+        -property : 전환되는 대상이 되는 속성(background, width, height ... )
+        property의 기본값은 all이며, 값이 많거나 특정한 속성을 지칭할 수 없는 경우
+        생략 가능
+
+        -duration : 전환되는 시간
+        단위는 s(세컨즈), ms 1초 = 1s , 1s = 1000ms
+
+        -delay : 지연 시간
+        이벤트가 발생되고 전환이 시작되기 까지의 지연시간
+        단위는 s(세컨즈), ms 1초 = 1s , 1s = 1000ms
+
+        -timing-function : 전환시간 함수
+
+        linear : 처음부터 끝까지 일정한 속도 유지
+        ease : 느림-> 빠름 -> 느림
+        ease-in : 느림-> 가속하면서 종료(기본값)
+        ease-out : 빠름-> 감속하면서 종료
+        ease-in-out : 느리게 시작->빠르게 진행 ->느리게 종료 **ease보다 빠름
+
+        transition 그룹 속성
+        transition : property(생략 O) duration(생략 X) delay(생략 O) timing-function(생략 O)
+        duration을 제외한 나머지 속성은 기본값이 있기 때문에 생략 O
+        다른 속성은 순서가 바뀌어도 상관 X, 
+        duration과 delay는 순서 꼭 지켜야 할 것.
+        값이 하나만 있으면 duration만 적용
+        값이 2개일 경우 항상 앞에 있는 시간값이 duration.
+ 
+    
+    
+    
+    
+    
+    
+    */
+
+    div.box{
+        width:500px;
+        height:500px;
+        background: skyblue;
+        transform-origin: left top;
+        transition-property: all;
+        /*transition-duration: 1500ms;
+        transition-delay: 300ms;
+        transition-timing-function: ease-in;*/
+        transition: 1500ms;
+    }
+
+    div.box:hover{
+        background:darkgreen;
+        transform:scaleX(1.5)
+    }
+
+
+
+    </style>
+</head>
+<body>
+    
+<div class="box">
+    box
+</div>
+
+
+
+</body>
+</html>

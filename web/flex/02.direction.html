@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+
+        div.container{
+            padding:12px;
+            background:gray;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /*
+            flex-direction : 배치방향
+
+            row : 가로축(기본값) 왼쪽부터 오른쪽으로 진행
+            row-reverse : 가로축 오른쪽부터 왼쪽으로 진행
+            column : 세로축 위부터 아래로 진행
+            column-reverse : 세로축 아래에서 위로 진행
+            
+        */
+
+        div.item{
+            width:25%;
+            padding:10px;
+            border: solid 2px #fff;
+            background:skyblue;
+        }
+
+        @media screen and (max-width:768px){
+            div.container{
+                flex-direction: column;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">aaaaaa</div>
+        <div class="item">bbbbbbbbbbb</div>
+        <div class="item">vv</div>
+        <div class="item">dddddddddddddddddddd</div>
+    </div>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+
+
+
+
+
+
+</body>
+</html>

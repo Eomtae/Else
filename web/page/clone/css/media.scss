@@ -1,0 +1,55 @@
+$mobile: 767px;
+$tablet: 1023px;
+$desktop : 1024px;
+
+/*반응형 mixin으로 깔끔하게 사용하기*/
+@mixin device($min,$max){
+  @media (min-width: $min) and (max-width: $max){ 
+    @content;
+  }
+}
+
+@include device(320px, $mobile){
+  .main-banner{
+    
+    .campain-container{
+      display: flex;
+      flex-direction: column;
+      .campain-left{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+      }
+    .campain-right{
+      width:100%;
+      ul >li >a >div{
+        display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+        .campain-left-box{
+          width:100%;
+          font-size: 5.4645vw;
+        }
+        .campain-right-box{
+          font-size: 3.4vw;
+        }
+      }
+    }
+  }
+  // campain-------------------------------
+  .product-container{
+    width:100%;
+    .product-left{
+      width:100%;
+      display: flex;
+    }
+    
+
+  }
+  }// main---------------------
+}
+
+
+
+
+

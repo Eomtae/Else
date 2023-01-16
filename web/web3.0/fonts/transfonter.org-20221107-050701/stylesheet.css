@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'MYArirang_gothic';
+    src: url('MYArirang_gothic-Light.eot');
+    src: url('MYArirang_gothic-Light.eot?#iefix') format('embedded-opentype'),
+        url('MYArirang_gothic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

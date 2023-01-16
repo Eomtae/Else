@@ -1,0 +1,12 @@
+import React from 'react';
+
+function App(){
+    //스크립트 문법 작성
+    return(
+        <div>JSX문법 </div>
+    )
+}
+export default App;
+
+
+React router dom : 새로운 페이지를 로드하지 않고 하나의 페이지 안에서 필요한 데이터만 가져오는 형태

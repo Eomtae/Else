@@ -1,0 +1,22 @@
+header {
+  .text {
+    width: 1400px;
+    height: 500px;
+    margin: 0 auto;
+    // border: solid 3px yellow;
+    text-align: center;
+    // display: flex;
+    // justify-content: center;
+    font-size: 36px;
+    .sections {
+      width: 700px;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      //   border: solid 3px red;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

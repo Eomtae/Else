@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="active">
+        <h1>BI</h1>
+        <nav>
+            메뉴들.....
+        </nav>
+    </header>
+
+    <div class="con active">
+        콘텐츠
+    </div>
+
+    <style>
+        .con{transform:translateY(100%);
+            transition: 0.5s;}
+            .con.active{
+                transform: translateY(0%);
+            }
+        header h1{color:#fff;}
+        header nav{color:#fff;}
+
+        header.active h1{color:#000;}
+        header.active nav{color:#000;}
+
+        body{background-color: #aaa;}
+        header{position: fixed; top:0;}
+        body{height:5000px;}
+    </style>
+
+    <script>
+        const elHeader = document.querySelector('header')
+        window.onscroll = () =>{
+            if(window.pageYOFFset > 100){
+                elHeader.classList.add('active');
+            }
+            else{
+                elHeader.classList.remove('active');
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /*
+        방향 정렬 요소
+        justtify = 메인축의 정렬
+        align = 보조축(메인축의 반대방향)
+        direction에 따라서 메인축과 보조축은 바뀌게 된다.
+
+        space-around = 자식들의 요소'둘레'에 균일한 간격을 배분한다.
+        space-between = 자식들의 요소'사이'에 균일한 간격을 배분(양끝은 제외)
+        space-evenly = 자식요소들의 양쪽에 균일한 간격을 배분(IE미지원)
+        flex-start = 기본값(direction에 따라 기준이 바뀜)
+        flex-end = 정렬의 끝쪽에서 시작
+        center = 가운데 정렬
+
+
+
+        */
+        div.container{
+            display :flex;
+            justify-content:space-around ;
+        }
+
+    </style>
+    <title>축</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">aaaaaa</div>
+        <div class="item">bbbbbbbbbbb</div>
+        <div class="item">vv</div>
+        <div class="item">dddddddddddddddddddd</div>
+    </div>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+</body>
+</html>

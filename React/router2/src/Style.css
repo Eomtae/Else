@@ -1,0 +1,16 @@
+header .text {
+  width: 1400px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 36px;
+}
+header .text .sections {
+  width: 700px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}/*# sourceMappingURL=Style.css.map */

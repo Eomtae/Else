@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*반응형 mixin으로 깔끔하게 사용하기*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-banner .campain-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-banner .campain-container .campain-left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-banner .campain-container .campain-right {
+    width: 100%;
+  }
+  .main-banner .campain-container .campain-right ul > li > a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-banner .campain-container .campain-right ul > li > a > div .campain-left-box {
+    width: 100%;
+    font-size: 5.4645vw;
+  }
+  .main-banner .campain-container .campain-right ul > li > a > div .campain-right-box {
+    font-size: 3.4vw;
+  }
+  .main-banner .product-container {
+    width: 100%;
+  }
+  .main-banner .product-container .product-left {
+    width: 100%;
+    display: flex;
+  }
+}/*# sourceMappingURL=media.css.map */

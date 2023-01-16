@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자</title>
+    <style>
+    /*
+        가상 선택자
+        -사용자의 행동에 영향을 받는 요소를 생성하거나(event)
+        -특정한 위치의 순번을 가진 선택자를 찾을 때(select)를
+        -통틀어서 가상 선택자라고 한다.
+
+        이벤트 요소
+        
+        a태그에만 들어가는 이벤트 속성
+        
+        :visited : 방문했던 사이트에 대한 선택자
+        :link : 방문하지 않은 사이트에 대한 선택자
+
+        모든 선택자에 들어가는 이벤트 속성
+        :hover - 마우스 이벤트(마우스 커서를 해당 태그에 갖다 놓았을 때)
+        :active - 마우스로 클릭한 상태이거나 혹은 해당 요소가 활성화 되어져 있을 때 
+        :focus - 키보드 이벤트(해당 객체가 포커싱되어져 있을 때)
+        focus는 특정한 행동을 하는 객체(버튼.입력.기능)과 같은 행동을 발생시키는
+            태그한테만 적용된다.
+
+        특정 위치의 선택자를 찾는 선택자
+        nth-child(n) = 
+        숫자는 순번을 의미, 숫자 뒤 n이 붙을 경우 숫자의 배수가 됨.
+            ex)2n - 2의 배수
+               odd - 홀수 / even - 짝수 처럼 특정한 순번을 선택할 수도 있다.
+        last-child  
+        first-child
+        
+        nth-child의 가장 큰 특징은 태그와 선택자와 관계없이
+        부모요소에서 해당하는 순번만 만족한다.(순번만 만족)
+
+        nth-of-type(n) : 부모요소를 기준으로 자식요소인 선택자 태그중에서만
+                         순번을 찾는다.(type과 순번 모두를 만족)
+
+
+
+
+    
+    
+    
+    */
+    a{
+        color:#000;
+    }       
+    a:visited{
+        color:orange;
+    }
+    a:link{
+        color:red;
+    }
+    a:active{
+        background:coral;
+        color:gray;
+    }
+    a:focus{
+        background:purple;
+        color:red;
+    }
+
+    ul{
+        list-style: none;
+        padding:24px;
+        background:coral;
+        width:100%;
+
+    }
+    ul li{
+        width:100%;
+        height:50px;
+        margin-bottom: 20px;
+        background:pink;
+    }
+
+    ul li:last-child{
+        margin-bottom: 0px;
+    }
+    ul li:nth-child(even){
+        background:rgb(186, 124, 222);
+    }
+
+    div.list{
+        padding:25px;
+        background:lightblue;
+        width:100%;
+    }
+
+    div.list p:nth-child(2){
+        background: green;
+    }
+
+    div.list p:nth-of-type(3){
+        background:ivory;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <a href="www.235.co.kr" id="red">방문하기</a>
+    <br>
+    <a href="http://www.naver.com">방문하기</a>
+    <div>box</div>
+    <p>text</p>
+    <button>button</button>
+    <input type="text">
+    <div>text</div>
+
+
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <div class="list">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <span>Lorem ipsum dolor.</span>
+        <div>Lorem, ipsum dolor sit amet.</div>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <a href="#">Lorem, ipsum dolor.</a>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

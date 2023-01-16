@@ -1,0 +1,76 @@
+article{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ani-1 div{
+    overflow: hidden;
+}
+
+.ani-1 p{
+    margin:0;
+    font-size: 5rem;
+    animation:ani-1 2s forwards ;
+    /* cubic-bezier.com */
+    /* name : 이름
+    duration : 속도
+    timing-function : 진행방법-속도
+    delay : 지연시간
+    iteration-count 반복 - (infinite)
+    direction : 방향 - alternate(양방향), reverse , alternate-reverse
+    fill-mode : 애니메이션의 상태 - forwards : 끝지점, backwards : 시작점
+    */
+
+}
+
+@keyframes ani-1{
+    /* from{}
+    to{} */
+    0%{transform:translateY(100%)}
+    50%{transform: translateY(0%);}
+    100%{}
+}
+
+
+.ani-1 p::after{ /* 줄넣기 */
+    border-bottom: solid 1px #000;
+    content: '';
+    width:0%;
+    display: block;
+    animation: line .5s  .7s forwards;
+}
+@keyframes line{
+    100%{width:100%;}
+}
+
+/* .ani-2 */
+
+.ani-2 div{
+    width:400px;
+    height:200px;
+    position:relative;
+    animation: ani-2 2s infinite alternate;
+    transform-style: preserve-3d;
+}
+@keyframes ani-2 {
+    0%{transform: perspective(600px) rotateY(0deg);}
+    100%{transform:perspective(600px) rotateY(360deg);}
+}
+.ani-2 p{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.ani-2 p:nth-of-type(1){
+    background-color: red;
+    
+}
+.ani-2 p:nth-of-type(2){
+    background-color: blue;
+    transform: translateX(-100px);
+    }

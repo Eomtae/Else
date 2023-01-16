@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Bahnschrift";
+  src: url(../font/transfonter.org-20221115-063053/Bahnschrift.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+  margin: 0;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, p, figure {
+  margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul img, li img {
+  vertical-align: middle;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, i, em, strong, b, code, ::after, ::before {
+  display: inline-block;
+}
+
+.header-container {
+  position: absolute;
+  width: 100%;
+  height: 156px;
+  left: 0px;
+  top: 0px;
+  background-color: #000;
+  z-index: 9999;
+}
+.header-container h1 {
+  text-align: center;
+}
+.header-container .nav {
+  text-align: center;
+  align-items: center;
+  line-height: 22px;
+  letter-spacing: 0.5em;
+  padding: 28px;
+}
+.header-container .header-top-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}/*# sourceMappingURL=common.css.map */

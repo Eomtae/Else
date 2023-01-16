@@ -1,0 +1,146 @@
+@import url(./font.css);
+
+html,body{
+    margin:0; font-size:16px;
+}
+h1,h2,h3,h4,p,figure{
+    margin:0;
+}
+ul,li{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+*{box-sizing:border-box;}
+
+a,i,em,strong,b,code,::after,::before{
+    display: inline-block;
+}
+
+/*header*/
+header{
+    position: absolute;
+    left:0;
+    top:0%;
+    width:100%;
+    padding: 20px 0;
+    
+}
+header > div{
+    width:86%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div > nav{
+    position:relative;
+}
+    header > div > nav > button{
+        width:26px;
+        height:16px;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    header > div > nav > button > span{
+        position:absolute;
+        left:0;
+        width:100%;
+        border-top: solid 2px #fff;
+        transition:0.3s;
+    }
+    header > div > nav > button > span:nth-child(1){top:0%;}
+    header > div > nav > button > span:nth-child(2){top:50%;}
+    header > div > nav > button > span:nth-child(3){top:100%;}
+
+    header > div > nav > button:hover > span:nth-child(1){
+        top:50%;
+        transform: rotate(45deg);
+    }
+    header > div > nav > button:hover > span:nth-child(2){
+        top:50%;
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    header > div > nav > button:hover > span:nth-child(3){
+        top:50%;
+        transform: rotate(-45deg);
+    }
+    header > div > nav > button:hover + div {
+        display:block;
+    }
+    header > div > nav > div{
+        position:absolute;
+        left:0;
+        top:40px;
+        background-color: transparent;
+        display: none;
+    }
+    header > div > nav > div > a{
+        display:block;
+        color:#fff;
+        padding:10px;
+        text-align: center;
+    }
+
+header > div > h1{}
+    header > div > h1 > a{
+        text-transform:uppercase;
+        font-size:2rem;
+        font-family: "Bahnschrift";
+    }
+
+header > div > div.lang{
+    position:relative;
+    font-size: 0.8rem;
+}
+    header > div > div.lang > p{
+        color:#fff;    
+        
+    }
+    header > div > div.lang > p:hover + ul li{
+        display: block;
+    }
+    header > div > div.lang > p::after{
+        content:"▶";
+        font-size: 6px;
+        transform: scale(0.8);
+    }
+    header > div > div.lang > ul{
+        display: none;
+        position:absolute;
+        left:0;
+        bottom:0;
+        border: solid 1px #ddd;
+        border-bottom-width: 0;
+        transform:translateY(100%);
+    }
+    header > div > div.lang > ul > li{
+        border-bottom: solid 1px #ddd;
+        padding:6px 20px;
+    }
+
+
+
+
+
+/*footer*/
+
+/*button*/
+
+/*popup*/
+
+/*input*/
+
+/*table*/
+

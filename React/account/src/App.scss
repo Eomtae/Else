@@ -1,0 +1,23 @@
+ul,li{
+    list-style-type: none;
+}
+.money{
+    width:400px;
+    height:400px;
+    background-color: beige;
+    border: solid 3px black;
+    text-align: center;
+    margin: 0 auto;
+    .one{
+        width: 100%;
+        height:150px;
+        background-color: cadetblue;
+    }
+    .two{
+        display:flex;
+        justify-content: center;
+        
+       
+        
+    }    
+}
